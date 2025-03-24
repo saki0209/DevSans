@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+  
+  <div id="overlay" class="overlay"></div>
+
+<!-- Popup Image -->
+<div id="popup" class="popup">
+  <button class="close-btn" onclick="closePopup()">X</button>
+    <img src="popup.jpeg" alt="Popup Image">
+</div>
+<div class="Announcement">
+</div>
+  <h1 id="welcome">A warm, inviting message from the principal or head of the school.</h1>
+  <br>
+  <form id="contactForm" onsubmit="submitForm(event)">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="Your feedback" placeholder="Your feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+  <br>
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="download.jpeg" alt="Image 1">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="free adm.jpg" alt="Image 2">
+  </div>
+
+<div class="mySlides fade">
+    <img src="future.jpg" alt="Image 3">
+  </div>
+
+  <!-- Navigation buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- Dots for navigation -->
+<div>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+<script src="Home.js"></script>
+</body>
+<footer class="footer">
+  Email id: &#128231; devsanskritividyamandir@gmail.com | Phone no. :&#x260E; 98555-07125, 75349-10882.
+</footer>
+</html>
