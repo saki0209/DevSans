@@ -1,26 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".navbar a");
 
-    // Get the scroll-to-top button (only if it exists)
-    const mybutton = document.getElementById("scrollToTopBtn");
-    
-    if (mybutton) {
-        window.onscroll = function () { scrollFunction(); };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        mybutton.addEventListener("click", function () {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        });
-    }
-
     // Initialize AOS animation library (only if AOS exists)
     if (typeof AOS !== "undefined") {
         AOS.init({
