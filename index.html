@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=https://devsanskritividyamandir.xyz/" />
   <title>Dev Sanskriti School</title>
   <link rel="stylesheet" href="school1.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -98,5 +97,10 @@
 
   <script src="school1.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  if (window.location.hostname.includes("github.io")) {
+    window.location.replace("https://devsanskritividyamandir.xyz" + window.location.pathname);
+  }
+</script>
 </body>
 </html>
