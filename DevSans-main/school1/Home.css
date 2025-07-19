@@ -1,0 +1,164 @@
+body{
+  background-image:url(stud.jpg) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.popup {
+display: none; /* Initially hidden */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border: 2px solid #f1f6f9;
+padding: 10px;
+background-color: #c01818;
+z-index: 1000;
+width: 80%; /* Adjust the width to be 80% of the viewport */
+max-width: 500px; /* Set a maximum width */
+height: 650px; /* Set the height */
+animation: fadeIn 1s; /* Add fade-in animation */
+}
+
+/* Style the overlay */
+.overlay {
+display: none; /* Initially hidden */
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 999;
+animation: fadeIn 1s; /* Add fade-in animation */
+}
+
+/* Style the close button */
+.close-btn {
+position: absolute;
+top: 5px;
+right: 5px;
+cursor: pointer;
+background-color: red;
+color: white;
+border: none;
+padding: 5px 10px;
+font-size: 16px;
+}
+
+/* Style the image to fit the popup */
+.popup img {
+max-width: 500px; /* Adjust the max-width */
+height: 650px; /* Maintain aspect ratio */
+}
+
+/* Add keyframes for fade-in animation */
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+button:hover, .close-btn:hover, .prev:hover, .next:hover {
+  background-color: #555; /* Darken background on hover */
+}
+html {
+  scroll-behavior: smooth;
+}
+.mySlides {
+  transition: transform 0.5s ease-in-out;
+}
+
+#welcome{
+background-color: #851818;
+  color: whitesmoke;
+}
+
+.slideshow-container {
+position: relative;
+max-width: 300px; /* Adjusted max-width */
+margin: auto;
+}
+
+.mySlides {
+display: none;
+text-align: center;
+}
+
+.mySlides img {
+width: 300px; /* Adjusted width */
+height: 450px; /* Set the height */
+margin: auto;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev {
+left: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+.Announcement{
+  background-color: rgb(207, 197, 197);
+  padding: 10px;
+}
+.footer{
+  color: #ddd;
+  background-color: #591515;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
